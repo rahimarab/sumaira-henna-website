@@ -1,0 +1,1898 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="Sumaira Henna Art, Makeup & Hair Stylish. Professional henna, makeup, hair styling, face painting and glitter tattoos serving Dallas, Texas and Concord, California.">
+
+<title>Sumaira Henna Art, Makeup & Hair Stylish</title>
+
+<style>
+:root {
+    --purple: #641c9c;
+    --dark-purple: #35104f;
+    --pink: #e83e91;
+    --light-pink: #fff0f8;
+    --lavender: #f1e7ff;
+    --white: #ffffff;
+    --text: #33273b;
+    --muted: #756b7c;
+    --border: #eadcf1;
+    --shadow: 0 15px 45px rgba(75, 25, 105, 0.13);
+    --radius: 24px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text);
+    background: #ffffff;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1, h2, h3 {
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font-family: inherit;
+}
+
+.container {
+    width: min(1120px, 92%);
+    margin: auto;
+}
+
+.script {
+    font-family: "Brush Script MT", "Segoe Script", cursive;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(255,255,255,0.94);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(100,28,156,0.08);
+}
+
+.nav {
+    min-height: 78px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-mark {
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    color: white;
+    font-family: Georgia, serif;
+    font-size: 24px;
+    background: linear-gradient(135deg, var(--purple), var(--pink));
+    box-shadow: 0 8px 20px rgba(100,28,156,0.25);
+}
+
+.logo-text strong {
+    display: block;
+    font-family: Georgia, serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: var(--dark-purple);
+}
+
+.logo-text span {
+    display: block;
+    font-size: 10px;
+    color: var(--pink);
+    letter-spacing: 1px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+nav a {
+    font-size: 13px;
+    font-weight: bold;
+    color: #514456;
+    transition: 0.25s;
+}
+
+nav a:hover {
+    color: var(--pink);
+}
+
+.nav-button {
+    padding: 11px 18px;
+    border-radius: 30px;
+    color: white !important;
+    background: linear-gradient(90deg, var(--purple), var(--pink));
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 760px;
+    padding: 150px 0 90px;
+    position: relative;
+    overflow: hidden;
+
+    background:
+        radial-gradient(circle at 85% 15%, rgba(255,112,185,0.45), transparent 28%),
+        radial-gradient(circle at 5% 85%, rgba(160,100,255,0.30), transparent 30%),
+        linear-gradient(135deg, #f1e6ff 0%, #fff3fa 50%, #eadcff 100%);
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 1px solid rgba(100,28,156,0.12);
+    right: -100px;
+    top: 130px;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 1px solid rgba(232,62,145,0.15);
+    left: -100px;
+    bottom: 40px;
+}
+
+.hero-grid {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    align-items: center;
+    gap: 60px;
+}
+
+.eyebrow {
+    color: var(--pink);
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 6vw, 72px);
+    line-height: 1.04;
+    color: var(--dark-purple);
+    margin-bottom: 18px;
+}
+
+.hero h1 span {
+    color: var(--pink);
+}
+
+.hero h2 {
+    font-size: clamp(23px, 3vw, 34px);
+    font-weight: normal;
+    color: var(--purple);
+    margin-bottom: 17px;
+}
+
+.hero-description {
+    font-size: 17px;
+    color: var(--muted);
+    max-width: 620px;
+    margin-bottom: 28px;
+}
+
+.actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 14px 22px;
+    border-radius: 999px;
+    font-weight: 800;
+    border: 1px solid transparent;
+    transition: 0.25s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(70,20,100,0.15);
+}
+
+.btn-primary {
+    color: white;
+    background: linear-gradient(90deg, var(--purple), var(--pink));
+}
+
+.btn-white {
+    background: white;
+    color: var(--purple);
+    border-color: var(--border);
+}
+
+/* Hero image placeholder */
+
+.hero-image-card {
+    min-height: 510px;
+    padding: 14px;
+    border-radius: 34px;
+    background: rgba(255,255,255,0.75);
+    box-shadow: var(--shadow);
+    transform: rotate(1deg);
+}
+
+.hero-image {
+    min-height: 480px;
+    height: 100%;
+    border-radius: 26px;
+    position: relative;
+    overflow: hidden;
+
+    background:
+        radial-gradient(circle at 30% 25%, rgba(255,255,255,0.5), transparent 20%),
+        linear-gradient(145deg, #652092, #e54898 55%, #ffb5dc);
+}
+
+.hero-image::before {
+    content: "";
+    position: absolute;
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.45);
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%) scaleX(0.72) rotate(15deg);
+}
+
+.hero-overlay {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    right: 25px;
+    padding: 20px;
+    border-radius: 20px;
+    background: rgba(42,7,61,0.38);
+    backdrop-filter: blur(8px);
+    color: white;
+}
+
+.hero-overlay small {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.hero-overlay h3 {
+    font-size: 27px;
+    margin-top: 5px;
+}
+
+/* =========================
+   GENERAL SECTIONS
+========================= */
+
+section {
+    padding: 95px 0;
+}
+
+.section-heading {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 45px;
+}
+
+.section-heading h2 {
+    font-size: clamp(34px, 4vw, 48px);
+    color: var(--dark-purple);
+    margin-bottom: 12px;
+}
+
+.section-heading p {
+    color: var(--muted);
+}
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+    background: white;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.about-art {
+    min-height: 390px;
+    border-radius: 30px;
+    display: grid;
+    place-items: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+
+    background: linear-gradient(145deg, #f0e2ff, #ffd9ec);
+}
+
+.about-art::before {
+    content: "S";
+    position: absolute;
+    font-family: Georgia, serif;
+    font-size: 230px;
+    color: rgba(100,28,156,0.06);
+}
+
+.about-seal {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    border: 2px solid rgba(100,28,156,0.25);
+    color: var(--purple);
+    background: rgba(255,255,255,0.55);
+    font-family: Georgia, serif;
+    font-size: 26px;
+    position: relative;
+    z-index: 2;
+}
+
+.about-seal small {
+    font-size: 13px;
+    display: block;
+}
+
+.about-copy h3 {
+    font-size: 35px;
+    color: var(--purple);
+    margin-bottom: 14px;
+}
+
+.about-copy p {
+    color: var(--muted);
+    margin-bottom: 18px;
+}
+
+.badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.badge {
+    background: var(--light-pink);
+    color: var(--purple);
+    padding: 9px 14px;
+    border-radius: 999px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+/* =========================
+   SERVICES
+========================= */
+
+.services {
+    background: linear-gradient(180deg, #ffffff, #fbf6ff);
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+}
+
+.service-card {
+    background: white;
+    border: 1px solid #eee2f4;
+    border-radius: 22px;
+    padding: 25px 18px;
+    text-align: center;
+    box-shadow: 0 10px 28px rgba(72,30,100,0.06);
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-7px);
+    box-shadow: var(--shadow);
+}
+
+.service-icon {
+    width: 62px;
+    height: 62px;
+    margin: 0 auto 15px;
+    border-radius: 18px;
+    display: grid;
+    place-items: center;
+    font-size: 29px;
+    background: linear-gradient(135deg, #f1e1ff, #ffe0f0);
+}
+
+.service-card h3 {
+    font-size: 21px;
+    color: var(--purple);
+    margin-bottom: 8px;
+}
+
+.service-card p {
+    font-size: 14px;
+    color: var(--muted);
+}
+
+/* =========================
+   WHY CHOOSE US
+========================= */
+
+.why {
+    background: linear-gradient(135deg, #35104f, #71269e 55%, #c92f82);
+    color: white;
+}
+
+.why .section-heading h2,
+.why .section-heading p {
+    color: white;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+}
+
+.why-card {
+    text-align: center;
+    padding: 25px 12px;
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 20px;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(6px);
+}
+
+.why-card .icon {
+    font-size: 30px;
+    display: block;
+    margin-bottom: 9px;
+}
+
+.why-card span {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* =========================
+   GALLERY
+========================= */
+
+.gallery {
+    background: white;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 9px;
+    margin-bottom: 30px;
+}
+
+.filter-btn {
+    border: 1px solid #dfcfea;
+    background: white;
+    color: var(--purple);
+    padding: 9px 15px;
+    border-radius: 999px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    color: white;
+    background: linear-gradient(90deg, var(--purple), var(--pink));
+    border-color: transparent;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.gallery-item {
+    height: 270px;
+    border-radius: 22px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 8px 25px rgba(45,20,65,0.08);
+    transition: 0.3s;
+}
+
+.gallery-item:hover {
+    transform: scale(1.02);
+}
+
+.gallery-placeholder {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-family: Georgia, serif;
+    font-size: 25px;
+}
+
+.gallery-henna {
+    background: linear-gradient(135deg, #542071, #e44e9d);
+}
+
+.gallery-makeup {
+    background: linear-gradient(135deg, #e44e9d, #ffb2d6);
+}
+
+.gallery-hair {
+    background: linear-gradient(135deg, #8c4bb2, #f28abf);
+}
+
+.gallery-face {
+    background: linear-gradient(135deg, #42205e, #b34ed0);
+}
+
+.gallery-glitter {
+    background: linear-gradient(135deg, #d63d91, #7b35ae);
+}
+
+.gallery-bridal {
+    background: linear-gradient(135deg, #ff79b5, #7134a1);
+}
+
+.gallery-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+    background: linear-gradient(transparent, rgba(30,5,45,0.8));
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* =========================
+   OCCASIONS
+========================= */
+
+.occasions {
+    background: linear-gradient(135deg, #fff0f8, #f3eaff);
+}
+
+.occasion-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.occasion {
+    background: white;
+    padding: 22px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(72,30,100,0.06);
+    color: var(--purple);
+    font-weight: bold;
+    transition: 0.25s;
+}
+
+.occasion:hover {
+    transform: translateY(-5px);
+}
+
+/* =========================
+   REVIEWS
+========================= */
+
+.reviews {
+    background: white;
+}
+
+.review-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.review {
+    background: linear-gradient(145deg, #fff, #fff6fb);
+    padding: 28px;
+    border-radius: 24px;
+    box-shadow: var(--shadow);
+    border: 1px solid #f1e4f4;
+}
+
+.stars {
+    color: #d92c87;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.review p {
+    color: var(--muted);
+    font-style: italic;
+    margin-bottom: 18px;
+}
+
+.review strong {
+    color: var(--purple);
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+    background: white;
+}
+
+.contact-box {
+    border-radius: 32px;
+    padding: 50px;
+    background: linear-gradient(135deg, #5d1a91, #d83989);
+    color: white;
+    box-shadow: var(--shadow);
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 35px;
+    align-items: center;
+}
+
+.contact-box h2 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.contact-box p {
+    color: #fceafa;
+    max-width: 700px;
+}
+
+.contact-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.contact-pill {
+    padding: 10px 14px;
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 999px;
+    background: rgba(255,255,255,0.1);
+    font-weight: bold;
+}
+
+.contact-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 210px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #24102f;
+    color: white;
+    text-align: center;
+    padding: 50px 20px 100px;
+}
+
+footer h3 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.footer-tagline {
+    color: #f2b8da;
+    font-size: 23px;
+}
+
+footer p {
+    color: #d9cde0;
+}
+
+.instagram {
+    display: inline-flex;
+    margin: 18px 0;
+    padding: 11px 17px;
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 999px;
+}
+
+.copyright {
+    font-size: 13px;
+    margin-top: 18px;
+    color: #ad9bb9;
+}
+
+/* =========================
+   MOBILE CONTACT BAR
+========================= */
+
+.mobile-bar {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2000;
+    background: rgba(255,255,255,0.97);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid #e6dced;
+    padding: 8px;
+    gap: 7px;
+}
+
+.mobile-bar a {
+    flex: 1;
+    text-align: center;
+    padding: 11px 5px;
+    border-radius: 12px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.mobile-call {
+    background: #5d1a91;
+}
+
+.mobile-text {
+    background: #c33d91;
+}
+
+.mobile-whatsapp {
+    background: #4b9b66;
+}
+
+/* =========================
+   ANIMATION
+========================= */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: none;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 950px) {
+
+    nav {
+        gap: 12px;
+    }
+
+    nav a:not(.nav-button) {
+        display: none;
+    }
+
+    .hero-grid,
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding-top: 125px;
+    }
+
+    .hero-image-card {
+        max-width: 650px;
+        margin: auto;
+    }
+
+    .service-grid,
+    .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .occasion-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-box {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-actions {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 620px) {
+
+    .nav {
+        min-height: 68px;
+    }
+
+    .logo-text strong {
+        font-size: 11px;
+    }
+
+    .logo-text span {
+        font-size: 8px;
+    }
+
+    .logo-mark {
+        width: 40px;
+        height: 40px;
+    }
+
+    .nav-button {
+        padding: 9px 12px;
+        font-size: 11px;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 115px 0 65px;
+    }
+
+    .hero h1 {
+        font-size: 43px;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+    .hero-image-card {
+        min-height: 350px;
+    }
+
+    .hero-image {
+        min-height: 325px;
+    }
+
+    section {
+        padding: 70px 0;
+    }
+
+    .service-grid,
+    .why-grid,
+    .gallery-grid,
+    .occasion-grid,
+    .review-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-item {
+        height: 250px;
+    }
+
+    .contact-box {
+        padding: 32px 23px;
+    }
+
+    .contact-box h2 {
+        font-size: 34px;
+    }
+
+    .contact-actions {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .mobile-bar {
+        display: flex;
+    }
+
+    footer {
+        padding-bottom: 100px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+    <div class="container nav">
+
+        <a href="#home" class="logo">
+
+            <div class="logo-mark">S</div>
+
+            <div class="logo-text">
+                <strong>SUMAIRA</strong>
+                <span>Henna • Makeup • Hair Styling</span>
+            </div>
+
+        </a>
+
+        <nav>
+            <a href="#home">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#services">SERVICES</a>
+            <a href="#gallery">GALLERY</a>
+            <a href="#contact">CONTACT</a>
+
+            <a href="#contact" class="nav-button">
+                BOOK NOW
+            </a>
+        </nav>
+
+    </div>
+</header>
+
+
+<main>
+
+<!-- =========================
+     HOME
+========================= -->
+
+<section class="hero" id="home">
+
+    <div class="container hero-grid">
+
+        <div class="reveal">
+
+            <div class="eyebrow">
+                Dallas, Texas • Concord, California
+            </div>
+
+            <h1>
+                SUMAIRA
+                <span>HENNA ART</span>,
+                MAKEUP & HAIR STYLISH
+            </h1>
+
+            <h2 class="script">
+                Your Beauty, Your Style, Your Special Day
+            </h2>
+
+            <p class="hero-description">
+                Professional henna, makeup, hair styling, face painting
+                and glitter tattoos for weddings, celebrations and
+                unforgettable special moments.
+            </p>
+
+            <div class="actions">
+
+                <a href="#contact" class="btn btn-primary">
+                    ✨ BOOK YOUR APPOINTMENT
+                </a>
+
+                <a
+                    href="https://wa.me/19724690023"
+                    target="_blank"
+                    rel="noopener"
+                    class="btn btn-white"
+                >
+                    💬 WHATSAPP US
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-image-card reveal">
+
+            <!--
+            PLACEHOLDER HERO IMAGE
+
+            Later you can replace this section with your own image.
+
+            Example:
+
+            <img src="images/hero.jpg"
+                 alt="Sumaira Henna and Beauty"
+                 style="width:100%;height:100%;object-fit:cover;border-radius:26px;">
+            -->
+
+            <div class="hero-image">
+
+                <div class="hero-overlay">
+
+                    <small>
+                        Beauty • Art • Elegance
+                    </small>
+
+                    <h3>
+                        Your special day deserves
+                        a special touch.
+                    </h3>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section class="about" id="about">
+
+    <div class="container about-grid">
+
+        <div class="about-art reveal">
+
+            <div class="about-seal">
+                <div>
+                    10+
+                    <small>
+                        YEARS OF<br>
+                        EXPERIENCE
+                    </small>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="about-copy reveal">
+
+            <div class="eyebrow">
+                Meet Sumaira
+            </div>
+
+            <h3>
+                Professional Beauty & Henna Artist
+            </h3>
+
+            <p>
+                With more than 10 years of experience, Sumaira brings
+                creativity, care and professional beauty expertise to
+                every appointment.
+            </p>
+
+            <p>
+                She is a licensed cosmetologist and specializes in
+                bridal work, creating polished looks that make your
+                special day even more memorable.
+            </p>
+
+            <p>
+                From detailed henna designs to beautiful makeup and
+                elegant hair styling, every service is tailored to
+                your style and occasion.
+            </p>
+
+            <div class="badges">
+
+                <span class="badge">
+                    10+ Years Experience
+                </span>
+
+                <span class="badge">
+                    Licensed Cosmetologist
+                </span>
+
+                <span class="badge">
+                    Bridal Specialist
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     SERVICES
+========================= -->
+
+<section class="services" id="services">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+
+            <div class="eyebrow">
+                What We Offer
+            </div>
+
+            <h2>
+                Our Services
+            </h2>
+
+            <p>
+                Beautiful details, professional artistry and personalized
+                service for every celebration.
+            </p>
+
+        </div>
+
+
+        <div class="service-grid">
+
+            <article class="service-card reveal">
+
+                <div class="service-icon">
+                    🌿
+                </div>
+
+                <h3>
+                    Henna Art
+                </h3>
+
+                <p>
+                    Traditional and modern henna designs
+                    for every occasion.
+                </p>
+
+            </article>
+
+
+            <article class="service-card reveal">
+
+                <div class="service-icon">
+                    💄
+                </div>
+
+                <h3>
+                    Makeup
+                </h3>
+
+                <p>
+                    Beautiful makeup looks for weddings,
+                    parties and special events.
+                </p>
+
+            </article>
+
+
+            <article class="service-card reveal">
+
+                <div class="service-icon">
+                    💇
+                </div>
+
+                <h3>
+                    Hair Styling
+                </h3>
+
+                <p>
+                    Elegant hairstyles designed to
+                    complete your look.
+                </p>
+
+            </article>
+
+
+            <article class="service-card reveal">
+
+                <div class="service-icon">
+                    🎨
+                </div>
+
+                <h3>
+                    Face Painting
+                </h3>
+
+                <p>
+                    Fun and creative face painting
+                    for events and celebrations.
+                </p>
+
+            </article>
+
+
+            <article class="service-card reveal">
+
+                <div class="service-icon">
+                    ✨
+                </div>
+
+                <h3>
+                    Glitter Tattoos
+                </h3>
+
+                <p>
+                    Sparkling temporary designs
+                    perfect for parties and festivals.
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     WHY CHOOSE US
+========================= -->
+
+<section class="why">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+
+            <div class="eyebrow">
+                Why Sumaira
+            </div>
+
+            <h2>
+                Why Choose Us
+            </h2>
+
+            <p>
+                Experience, professionalism and a personal
+                touch from start to finish.
+            </p>
+
+        </div>
+
+
+        <div class="why-grid">
+
+            <div class="why-card reveal">
+                <span class="icon">⭐</span>
+                <span>10+ Years of Experience</span>
+            </div>
+
+            <div class="why-card reveal">
+                <span class="icon">💄</span>
+                <span>Licensed Cosmetologist</span>
+            </div>
+
+            <div class="why-card reveal">
+                <span class="icon">👰</span>
+                <span>Bridal Specialist</span>
+            </div>
+
+            <div class="why-card reveal">
+                <span class="icon">✨</span>
+                <span>Professional & Creative</span>
+            </div>
+
+            <div class="why-card reveal">
+                <span class="icon">💜</span>
+                <span>Personalized Service</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     GALLERY
+========================= -->
+
+<section class="gallery" id="gallery">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+
+            <div class="eyebrow">
+                Our Work
+            </div>
+
+            <h2>
+                Gallery
+            </h2>
+
+            <p>
+                These are temporary placeholders.
+                Replace them with your own beautiful photos.
+            </p>
+
+        </div>
+
+
+        <div class="filters">
+
+            <button class="filter-btn active" data-filter="all">
+                ALL
+            </button>
+
+            <button class="filter-btn" data-filter="henna">
+                HENNA
+            </button>
+
+            <button class="filter-btn" data-filter="makeup">
+                MAKEUP
+            </button>
+
+            <button class="filter-btn" data-filter="hair">
+                HAIR
+            </button>
+
+            <button class="filter-btn" data-filter="face">
+                FACE PAINTING
+            </button>
+
+            <button class="filter-btn" data-filter="glitter">
+                GLITTER TATTOOS
+            </button>
+
+        </div>
+
+
+        <div class="gallery-grid">
+
+            <div class="gallery-item reveal" data-category="henna">
+                <div class="gallery-placeholder gallery-henna">
+                    🌿<br>Henna Art
+                </div>
+                <div class="gallery-caption">
+                    Henna Art
+                </div>
+            </div>
+
+
+            <div class="gallery-item reveal" data-category="makeup">
+                <div class="gallery-placeholder gallery-makeup">
+                    💄<br>Makeup
+                </div>
+                <div class="gallery-caption">
+                    Makeup
+                </div>
+            </div>
+
+
+            <div class="gallery-item reveal" data-category="hair">
+                <div class="gallery-placeholder gallery-hair">
+                    💇<br>Hair Styling
+                </div>
+                <div class="gallery-caption">
+                    Hair Styling
+                </div>
+            </div>
+
+
+            <div class="gallery-item reveal" data-category="face">
+                <div class="gallery-placeholder gallery-face">
+                    🎨<br>Face Painting
+                </div>
+                <div class="gallery-caption">
+                    Face Painting
+                </div>
+            </div>
+
+
+            <div class="gallery-item reveal" data-category="glitter">
+                <div class="gallery-placeholder gallery-glitter">
+                    ✨<br>Glitter Tattoos
+                </div>
+                <div class="gallery-caption">
+                    Glitter Tattoos
+                </div>
+            </div>
+
+
+            <div class="gallery-item reveal" data-category="henna">
+                <div class="gallery-placeholder gallery-bridal">
+                    🌸<br>Bridal Henna
+                </div>
+                <div class="gallery-caption">
+                    Bridal Henna
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     OCCASIONS
+========================= -->
+
+<section class="occasions">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+
+            <div class="eyebrow">
+                Celebrate With Us
+            </div>
+
+            <h2>
+                Perfect For Every Occasion
+            </h2>
+
+            <p>
+                Professional beauty and creative services
+                for your most memorable moments.
+            </p>
+
+        </div>
+
+
+        <div class="occasion-grid">
+
+            <div class="occasion reveal">
+                💍 Weddings
+            </div>
+
+            <div class="occasion reveal">
+                🌙 Eid
+            </div>
+
+            <div class="occasion reveal">
+                🎉 Parties
+            </div>
+
+            <div class="occasion reveal">
+                👶 Baby Showers
+            </div>
+
+            <div class="occasion reveal">
+                🎂 Birthday Parties
+            </div>
+
+            <div class="occasion reveal">
+                💕 Engagements
+            </div>
+
+            <div class="occasion reveal">
+                🎓 Graduations
+            </div>
+
+            <div class="occasion reveal">
+                🏢 Corporate Events
+            </div>
+
+            <div class="occasion reveal">
+                🎪 Events & Festivals
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     REVIEWS
+========================= -->
+
+<section class="reviews">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+
+            <div class="eyebrow">
+                Kind Words
+            </div>
+
+            <h2>
+                Customer Reviews
+            </h2>
+
+            <p>
+                Sample reviews are shown below.
+                Replace these with genuine customer testimonials
+                when available.
+            </p>
+
+        </div>
+
+
+        <div class="review-grid">
+
+            <article class="review reveal">
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    “Sumaira was so sweet and patient. My henna
+                    came out beautiful and exactly how I wanted it.
+                    I absolutely loved the final design!”
+                </p>
+
+                <strong>
+                    — Sarah
+                </strong>
+
+            </article>
+
+
+            <article class="review reveal">
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    “I felt so beautiful for my special event.
+                    The makeup looked amazing and lasted all night.
+                    She really listened to what I wanted.”
+                </p>
+
+                <strong>
+                    — Aisha
+                </strong>
+
+            </article>
+
+
+            <article class="review reveal">
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    “Wonderful experience from beginning to end.
+                    She was professional, friendly and made
+                    everything feel easy. I would definitely
+                    book again!”
+                </p>
+
+                <strong>
+                    — Jessica
+                </strong>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section class="contact" id="contact">
+
+    <div class="container">
+
+        <div class="contact-box reveal">
+
+            <div>
+
+                <div
+                    class="eyebrow"
+                    style="color:#ffd1ec;"
+                >
+                    Let's Create Something Beautiful
+                </div>
+
+                <h2>
+                    Ready for Your Special Day?
+                </h2>
+
+                <p>
+                    Contact Sumaira to discuss your event,
+                    service and preferred look.
+                    Serving Dallas, Texas & Concord, California.
+                </p>
+
+
+                <div class="contact-details">
+
+                    <span class="contact-pill">
+                        📍 Dallas, TX
+                    </span>
+
+                    <span class="contact-pill">
+                        📍 Concord, CA
+                    </span>
+
+                    <span class="contact-pill">
+                        📞 972-469-0023
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="contact-actions">
+
+                <a
+                    href="tel:+19724690023"
+                    class="btn btn-white"
+                >
+                    📞 CALL NOW
+                </a>
+
+                <a
+                    href="sms:+19724690023"
+                    class="btn btn-white"
+                >
+                    💬 TEXT US
+                </a>
+
+                <a
+                    href="https://wa.me/19724690023"
+                    target="_blank"
+                    rel="noopener"
+                    class="btn btn-white"
+                >
+                    🟢 WHATSAPP
+                </a>
+
+                <a
+                    href="https://instagram.com/sumaira.lakhani.946"
+                    target="_blank"
+                    rel="noopener"
+                    class="btn btn-white"
+                >
+                    📸 INSTAGRAM
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    <h3>
+        SUMAIRA HENNA ART, MAKEUP & HAIR STYLISH
+    </h3>
+
+    <p class="script footer-tagline">
+        Your Beauty, Your Style, Your Special Day
+    </p>
+
+    <p style="margin-top:8px;">
+        Dallas, TX & Concord, CA
+    </p>
+
+
+    <a
+        class="instagram"
+        href="https://instagram.com/sumaira.lakhani.946"
+        target="_blank"
+        rel="noopener"
+    >
+        📸 @sumaira.lakhani.946
+    </a>
+
+
+    <p>
+        Call • Text • WhatsApp:
+        <a href="tel:+19724690023">
+            972-469-0023
+        </a>
+    </p>
+
+
+    <div class="copyright">
+        © 2026 Sumaira Henna Art. All rights reserved.
+    </div>
+
+</footer>
+
+
+<!-- =========================
+     MOBILE CONTACT BAR
+========================= -->
+
+<div class="mobile-bar">
+
+    <a
+        class="mobile-call"
+        href="tel:+19724690023"
+    >
+        📞 CALL
+    </a>
+
+    <a
+        class="mobile-text"
+        href="sms:+19724690023"
+    >
+        💬 TEXT
+    </a>
+
+    <a
+        class="mobile-whatsapp"
+        href="https://wa.me/19724690023"
+        target="_blank"
+        rel="noopener"
+    >
+        🟢 WHATSAPP
+    </a>
+
+</div>
+
+
+<script>
+
+/* =========================
+   GALLERY FILTER
+========================= */
+
+const filterButtons =
+    document.querySelectorAll(".filter-btn");
+
+const galleryItems =
+    document.querySelectorAll(".gallery-item");
+
+filterButtons.forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        filterButtons.forEach(btn => {
+            btn.classList.remove("active");
+        });
+
+        button.classList.add("active");
+
+        const filter =
+            button.getAttribute("data-filter");
+
+        galleryItems.forEach(item => {
+
+            const category =
+                item.getAttribute("data-category");
+
+            if (
+                filter === "all" ||
+                category === filter
+            ) {
+                item.classList.remove("hidden");
+            } else {
+                item.classList.add("hidden");
+            }
+
+        });
+
+    });
+
+});
+
+
+/* =========================
+   SCROLL ANIMATION
+========================= */
+
+const observer =
+    new IntersectionObserver(
+        entries => {
+
+            entries.forEach(entry => {
+
+                if (entry.isIntersecting) {
+
+                    entry.target.classList.add("visible");
+
+                    observer.unobserve(
+                        entry.target
+                    );
+
+                }
+
+            });
+
+        },
+        {
+            threshold: 0.12
+        }
+    );
+
+
+document
+    .querySelectorAll(".reveal")
+    .forEach(element => {
+        observer.observe(element);
+    });
+
+</script>
+
+</body>
+</html>
