@@ -330,6 +330,16 @@
         }
 
         .service-icon {
+            .service-photo {
+    overflow: hidden;
+    padding: 0;
+}
+
+.service-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
             width: 65px;
             height: 65px;
             margin: 0 auto 18px;
@@ -943,8 +953,10 @@
             <div class="service-grid">
 
                 <div class="service-card">
-                    <div class="service-icon">🌸</div>
-                    <h3>Henna Art</h3>
+                  <div class="service-icon service-photo">
+    <img src="WhatsApp Image 2026-09-14 at 3.24.42 PM (10).jpeg" alt="Henna Art">
+</div>
+<h3>Henna Art</h3>
                     <p>
                         Traditional and modern henna designs
                         for every occasion.
