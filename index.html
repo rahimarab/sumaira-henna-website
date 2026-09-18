@@ -788,6 +788,47 @@
                 font-size: 15px;
             }
         }
+
+        /* ATTRACTIVE GALLERY TABS */
+        .gallery-tabs {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin: 0 auto 35px;
+        }
+
+        .gallery-tabs button {
+            border: 1px solid #ead7ef;
+            background: linear-gradient(135deg, #ffffff, #fff4fa);
+            color: var(--purple);
+            padding: 11px 17px;
+            border-radius: 999px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 12px;
+            letter-spacing: .3px;
+            box-shadow: 0 6px 18px rgba(80, 20, 90, .08);
+            transition: transform .2s ease, box-shadow .2s ease, background .2s ease, color .2s ease;
+        }
+
+        .gallery-tabs button:hover {
+            transform: translateY(-2px);
+            color: var(--pink);
+            box-shadow: 0 10px 24px rgba(232, 62, 145, .15);
+        }
+
+        .gallery-tabs button.active {
+            color: white;
+            border-color: transparent;
+            background: linear-gradient(135deg, var(--purple), var(--pink));
+            box-shadow: 0 10px 25px rgba(109, 35, 125, .22);
+        }
+
+        @media (max-width: 600px) {
+            .gallery-tabs { gap: 7px; margin-bottom: 25px; }
+            .gallery-tabs button { padding: 9px 11px; font-size: 11px; }
+        }
     </style>
 </head>
 
@@ -889,7 +930,7 @@
                 <div class="about-box">
 
                     <h3>
-                        10+ Years of Experience
+                        6+ Years of Experience
                     </h3>
 
                     <p>
@@ -916,16 +957,10 @@
                 <div class="credentials">
 
                     <div class="credential">
-                        <strong>10+ Years Experience</strong>
+                        <strong>6+ Years Experience</strong>
                         Professional beauty experience.
                     </div>
-
-                    <div class="credential">
-                        <strong>Bridal Specialist</strong>
-                        Specializing in beautiful bridal looks.
-                    </div>
-
-                    <div class="credential">
+<div class="credential">
                         <strong>Licensed Cosmetologist</strong>
                         Professional cosmetology training and licensing.
                     </div>
@@ -1021,72 +1056,7 @@
 
     </section>
 
-
-    <!-- WHY CHOOSE US -->
-
-    <section class="why">
-
-        <div class="container">
-
-            <div class="section-title">
-
-                <small>Why Choose Us</small>
-
-                <h2>Made For Your Special Moments</h2>
-
-                <p>
-                    Professional service with creativity,
-                    care and attention to detail.
-                </p>
-
-            </div>
-
-
-            <div class="why-grid">
-
-                <div class="why-card">
-                    <div class="icon">💜</div>
-                    <h3>Professional</h3>
-                    <p>
-                        Experienced and dedicated beauty services.
-                    </p>
-                </div>
-
-
-                <div class="why-card">
-                    <div class="icon">✨</div>
-                    <h3>Creative</h3>
-                    <p>
-                        Unique looks and beautiful designs.
-                    </p>
-                </div>
-
-
-                <div class="why-card">
-                    <div class="icon">👰</div>
-                    <h3>Bridal Specialist</h3>
-                    <p>
-                        Special attention for your important day.
-                    </p>
-                </div>
-
-
-                <div class="why-card">
-                    <div class="icon">🌸</div>
-                    <h3>Personal Touch</h3>
-                    <p>
-                        Your style and ideas come first.
-                    </p>
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- GALLERY -->
+<!-- GALLERY -->
 
     <section class="gallery" id="gallery">
 
@@ -1107,29 +1077,17 @@
 
             <div class="gallery-tabs">
 
-                <button class="active" onclick="filterGallery('all', this)">
-                    ALL
-                </button>
+                <button class="active" onclick="filterGallery('all', this)">✨ ALL</button>
 
-                <button onclick="filterGallery('henna', this)">
-                    HENNA
-                </button>
+                <button onclick="filterGallery('henna', this)">🌸 HENNA</button>
 
-                <button onclick="filterGallery('makeup', this)">
-                    MAKEUP
-                </button>
+                <button onclick="filterGallery('makeup', this)">💄 MAKEUP</button>
 
-                <button onclick="filterGallery('hair', this)">
-                    HAIR
-                </button>
+                <button onclick="filterGallery('hair', this)">💇‍♀️ HAIR</button>
 
-                <button onclick="filterGallery('face', this)">
-                    FACE PAINTING
-                </button>
+                <button onclick="filterGallery('face', this)">🎨 FACE PAINTING</button>
 
-                <button onclick="filterGallery('glitter', this)">
-                    GLITTER TATTOOS
-                </button>
+                <button onclick="filterGallery('glitter', this)">✨ GLITTER TATTOOS</button>
 
             </div>
 
@@ -1157,14 +1115,14 @@
 
 
                 <div class="gallery-item" data-category="face">
-                    <img src="WhatsApp Image 2026-09-14 at 3.24.40 PM (11).jpeg"
+                    <img src="WhatsApp Image 2026-09-17 at 6.18.17 PM.jpeg"
                          alt="Face Painting">
                     <div class="gallery-label">Face Painting</div>
                 </div>
 
 
                 <div class="gallery-item" data-category="glitter">
-                    <img src="WhatsApp Image 2026-09-14 at 3.24.40 PM (11).jpeg"
+                    <img src="WhatsApp Image 2026-09-16 at 10.16.52 AM.jpeg"
                          alt="Glitter Tattoos">
                     <div class="gallery-label">Glitter Tattoos</div>
                 </div>
@@ -1346,6 +1304,18 @@
                         📸 INSTAGRAM
                     </a>
 
+                    <a href="https://www.instagram.com/hennabyafreenl"
+                       target="_blank"
+                       class="btn btn-outline">
+                        📸 @HENNABYAFREENL
+                    </a>
+
+                    <a href="YOUR_SECOND_INSTAGRAM_URL"
+                       target="_blank"
+                       class="btn btn-outline">
+                        📸 INSTAGRAM 2
+                    </a>
+
                     <a href="https://www.facebook.com/sumaira.lakhani.946"
                        target="_blank"
                        class="btn btn-outline">
@@ -1378,7 +1348,7 @@
         </p>
 
         <p class="social">
-            @sumaira.lakhani.946
+            @sumaira.lakhani.946 • @hennabyafreenl
         </p>
 
         <p style="margin-top:20px;">
