@@ -1,390 +1,1407 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Browse makeup photos and videos by Sumaira Henna Art. Explore makeup looks for weddings, parties and special occasions.">
-<title>Makeup Gallery | Sumaira Henna Art</title>
-<style>
-:root {
-  --purple: #6d237d;
-  --deep-purple: #43134f;
-  --pink: #e83e91;
-  --light-pink: #fff0f8;
-  --lavender: #f2e4f7;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sumaira Henna Art, Makeup & Hair Stylish</title>
+
+    <meta name="description"
+          content="Sumaira Henna Art, Makeup & Hair Stylish serving Dallas, Texas and Concord, California. Henna, makeup, hair styling, face painting and glitter tattoos.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #35233f;
+            background: #fff9fd;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        :root {
+            --purple: #6d237d;
+            --deep-purple: #43134f;
+            --pink: #e83e91;
+            --light-pink: #fff0f8;
+            --lavender: #f2e4f7;
+            --white: #ffffff;
+            --gold: #c99b45;
+            --dark: #2d1735;
+        }
+
+        /* HEADER */
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.96);
+            box-shadow: 0 2px 20px rgba(70, 20, 80, 0.08);
+        }
+
+        .nav {
+            max-width: 1200px;
+            margin: auto;
+            padding: 15px 25px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .logo {
+            font-family: Georgia, serif;
+            font-weight: bold;
+            color: var(--deep-purple);
+            font-size: 18px;
+            line-height: 1.15;
+            max-width: 300px;
+        }
+
+        .logo span {
+            display: block;
+            color: var(--pink);
+            font-family: Arial, sans-serif;
+            font-size: 10px;
+            letter-spacing: 2px;
+            margin-top: 5px;
+        }
+
+        nav {
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            color: var(--deep-purple);
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--pink);
+        }
+
+        /* GENERAL */
+
+        section {
+            padding: 90px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title small {
+            color: var(--pink);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-weight: bold;
+            font-size: 12px;
+        }
+
+        .section-title h2 {
+            font-family: Georgia, serif;
+            color: var(--deep-purple);
+            font-size: 40px;
+            margin: 10px 0;
+        }
+
+        .section-title p {
+            max-width: 700px;
+            margin: auto;
+            color: #705e77;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 25px;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 13px;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--purple), var(--pink));
+            color: white;
+            box-shadow: 0 8px 25px rgba(110, 35, 125, 0.22);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+        }
+
+        .btn-outline {
+            border: 2px solid var(--purple);
+            color: var(--purple);
+            background: white;
+        }
+
+        .btn-outline:hover {
+            background: var(--purple);
+            color: white;
+        }
+
+        /* HERO */
+
+        /* HERO - FULL BACKGROUND IMAGE
+           Header/navigation remains unchanged above this section. */
+        .hero {
+            min-height: 100vh;
+            padding: 150px 20px 90px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            color: white;
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(45, 10, 55, 0.78),
+                    rgba(45, 10, 55, 0.48)
+                ),
+                url("ChatGPT Image Sep 17, 2026, 06_06_35 PM.png")
+                center center / cover no-repeat;
+        }
+
+        .hero-grid {
+            width: 100%;
+            max-width: 1000px;
+            margin: auto;
+            display: block;
+        }
+
+        .hero-text {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-text small {
+            color: #ffd1e8;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            font-weight: bold;
+            font-size: 12px;
+        }
+
+        .hero-text h1 {
+            font-family: Georgia, serif;
+            font-size: clamp(42px, 6vw, 72px);
+            color: white;
+            line-height: 1.05;
+            margin: 18px 0;
+            text-shadow: 0 3px 20px rgba(0,0,0,0.30);
+        }
+
+        .hero-text h1 span {
+            color: #ff9aca;
+        }
+
+        .hero-text h2 {
+            font-family: Georgia, serif;
+            color: white;
+            font-size: 27px;
+            margin-bottom: 15px;
+            text-shadow: 0 2px 12px rgba(0,0,0,0.35);
+        }
+
+        .hero-text p {
+            color: #fff;
+            font-size: 17px;
+            max-width: 700px;
+            margin: 0 auto 22px;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.40);
+        }
+
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 25px;
+        }
+
+        /* Remove the old separate right-side hero picture. */
+        .hero-image-card {
+            display: none;
+        }
+
+        .hero .btn-outline {
+            border-color: white;
+            color: white;
+            background: rgba(255,255,255,0.08);
+            backdrop-filter: blur(4px);
+        }
+
+        .hero .btn-outline:hover {
+            background: white;
+            color: var(--purple);
+        }
+
+        /* ABOUT */
+
+        .about {
+            background: white;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about-box {
+            padding: 35px;
+            background: var(--light-pink);
+            border-radius: 25px;
+            border-left: 5px solid var(--pink);
+        }
+
+        .about-box h3 {
+            font-family: Georgia, serif;
+            color: var(--deep-purple);
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        .about-box p {
+            color: #705e77;
+            margin-bottom: 15px;
+        }
+
+        .credentials {
+            display: grid;
+            gap: 15px;
+        }
+
+        .credential {
+            background: #fff;
+            padding: 20px;
+            border-radius: 18px;
+            box-shadow: 0 8px 25px rgba(60, 20, 70, 0.08);
+            border: 1px solid #f1e2f4;
+        }
+
+        .credential strong {
+            color: var(--purple);
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        /* SERVICES */
+
+        .services {
+            background: linear-gradient(180deg, #fff9fd, #f9effb);
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 18px;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 22px;
+            padding: 28px 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(75, 25, 85, 0.08);
+            transition: 0.3s;
+            border: 1px solid #f4e7f6;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 18px 35px rgba(75, 25, 85, 0.13);
+        }
+
+        .service-icon {
+            .service-photo {
+    overflow: hidden;
+    padding: 0;
 }
-* { box-sizing: border-box; }
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #35233f;
-  background: #fff9fd;
-  line-height: 1.6;
+
+.service-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-header {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  background: rgba(255,255,255,.97);
-  box-shadow: 0 2px 18px rgba(70,20,80,.09);
-}
-.nav {
-  max-width: 1200px;
-  margin: auto;
-  padding: 16px 22px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 15px;
-}
-.logo {
-  font-family: Georgia, serif;
-  color: var(--deep-purple);
-  font-size: 19px;
-  font-weight: bold;
-  text-decoration: none;
-  line-height: 1.25;
-}
-.logo span {
-  display: block;
-  margin-top: 4px;
-  color: var(--pink);
-  font: bold 10px Arial, sans-serif;
-  letter-spacing: 1.5px;
-}
-.back {
-  color: var(--purple);
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: bold;
-}
-.back:hover { color: var(--pink); }
-.hero {
-  text-align: center;
-  padding: 58px 20px 45px;
-  background: linear-gradient(135deg, var(--lavender), var(--light-pink));
-}
-.hero small {
-  color: var(--pink);
-  font-size: 12px;
-  font-weight: bold;
-  letter-spacing: 3px;
-}
-h1 {
-  margin: 10px 0;
-  color: var(--deep-purple);
-  font: bold clamp(32px, 5vw, 48px) Georgia, serif;
-}
-.hero p {
-  max-width: 680px;
-  margin: 0 auto;
-  color: #705e77;
-}
-.gallery-wrap {
-  max-width: 1250px;
-  margin: auto;
-  padding: 38px 20px 65px;
-}
-.gallery-heading {
-  text-align: center;
-  margin-bottom: 28px;
-}
-.gallery-heading h2 {
-  margin: 0 0 5px;
-  color: var(--deep-purple);
-  font: bold 30px Georgia, serif;
-}
-.gallery-heading p { margin: 0; color: #705e77; }
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 18px;
-}
-.gallery-card {
-  position: relative;
-  display: block;
-  width: 100%;
-  padding: 0;
-  border: 0;
-  overflow: hidden;
-  border-radius: 17px;
-  background: #f2e4f7;
-  box-shadow: 0 7px 22px rgba(67,19,79,.10);
-}
-button.gallery-card { cursor: pointer; }
-.gallery-card img {
-  display: block;
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  transition: transform .3s ease;
-}
-.gallery-card:hover img { transform: scale(1.04); }
-.view-label, .video-label {
-  display: block;
-  padding: 10px 12px;
-  color: var(--deep-purple);
-  background: white;
-  text-align: center;
-  font-size: 13px;
-  font-weight: bold;
-}
-.video-card video {
-  display: block;
-  width: 100%;
-  height: 300px;
-  object-fit: contain;
-  background: #211326;
-}
-.book {
-  margin: 42px auto 0;
-  padding: 34px 20px;
-  text-align: center;
-  border-radius: 22px;
-  background: var(--light-pink);
-}
-.book h2 {
-  margin: 0 0 8px;
-  color: var(--deep-purple);
-  font: bold 30px Georgia, serif;
-}
-.book p { margin: 0; color: #705e77; }
-.button {
-  display: inline-block;
-  margin-top: 17px;
-  padding: 13px 24px;
-  border-radius: 30px;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  background: linear-gradient(135deg, var(--purple), var(--pink));
-}
-footer {
-  padding: 28px 15px;
-  text-align: center;
-  color: white;
-  background: #29102f;
-  font-size: 13px;
-}
-footer p { margin: 5px 0 0; color: #d9c8dd; }
-/* Full-size photo viewer */
-.lightbox {
-  display: none;
-  position: fixed;
-  inset: 0;
-  z-index: 100;
-  padding: 24px;
-  background: rgba(20,8,24,.92);
-  align-items: center;
-  justify-content: center;
-}
-.lightbox.open { display: flex; }
-.lightbox img {
-  max-width: min(100%, 1100px);
-  max-height: 88vh;
-  object-fit: contain;
-}
-.close-lightbox {
-  position: absolute;
-  top: 12px;
-  right: 20px;
-  color: white;
-  background: transparent;
-  border: 0;
-  font-size: 38px;
-  cursor: pointer;
-}
-@media (max-width: 1000px) {
-  .gallery-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-  .gallery-card img, .video-card video { height: 280px; }
-}
-@media (max-width: 700px) {
-  .gallery-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
-  .gallery-card img, .video-card video { height: 240px; }
-  .nav { align-items: flex-start; }
-  .logo { font-size: 16px; }
-  .back { font-size: 12px; }
-}
-@media (max-width: 430px) {
-  .gallery-wrap { padding: 28px 12px 45px; }
-  .gallery-card img, .video-card video { height: 190px; }
-  .view-label, .video-label { font-size: 11px; padding: 8px 5px; }
-}
-</style>
+            width: 65px;
+            height: 65px;
+            margin: 0 auto 18px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #f7d9ee, #e8c7f0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+        }
+
+        .service-card h3 {
+            color: var(--deep-purple);
+            font-family: Georgia, serif;
+            margin-bottom: 10px;
+        }
+
+        .service-card p {
+            color: #76677c;
+            font-size: 14px;
+        }
+
+        /* WHY */
+
+        .why {
+            background: var(--deep-purple);
+            color: white;
+        }
+
+        .why .section-title h2,
+        .why .section-title p {
+            color: white;
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .why-card {
+            text-align: center;
+            padding: 30px 20px;
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: 22px;
+            background: rgba(255,255,255,0.05);
+        }
+
+        .why-card .icon {
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        .why-card h3 {
+            margin-bottom: 8px;
+        }
+
+        .why-card p {
+            color: #e7dbea;
+            font-size: 14px;
+        }
+
+        /* GALLERY */
+
+        .gallery {
+            background: white;
+        }
+
+        .gallery-tabs {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 35px;
+        }
+
+        .gallery-tabs button {
+            border: 1px solid #e2cce8;
+            background: white;
+            color: var(--purple);
+            padding: 10px 16px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 12px;
+            transition: 0.3s;
+        }
+
+        .gallery-tabs button.active,
+        .gallery-tabs button:hover {
+            background: var(--purple);
+            color: white;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 20px;
+            height: 280px;
+            background: linear-gradient(135deg, #ead2ef, #ffd7eb);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.4s;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.06);
+        }
+
+        .gallery-label {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 35px 15px 15px;
+            color: white;
+            background: linear-gradient(transparent, rgba(55,15,65,0.85));
+            font-weight: bold;
+        }
+
+        /* OCCASIONS */
+
+        .occasions {
+            background: var(--light-pink);
+        }
+
+        .occasion-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 14px;
+        }
+
+        .occasion {
+            background: white;
+            padding: 15px 22px;
+            border-radius: 50px;
+            color: var(--purple);
+            font-weight: bold;
+            box-shadow: 0 5px 15px rgba(70, 20, 80, 0.07);
+        }
+
+        /* REVIEWS */
+
+        .reviews {
+            background: white;
+        }
+
+        .review-note {
+            max-width: 700px;
+            margin: -25px auto 35px;
+            text-align: center;
+            font-size: 12px;
+            color: #9a7ca1;
+            background: #fff6fb;
+            padding: 12px;
+            border-radius: 12px;
+        }
+
+        .review-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .review {
+            background: #fff9fd;
+            padding: 30px;
+            border-radius: 22px;
+            border: 1px solid #f0dfef;
+        }
+
+        .stars {
+            color: var(--gold);
+            letter-spacing: 3px;
+            margin-bottom: 15px;
+        }
+
+        .review p {
+            color: #65556c;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        .review strong {
+            color: var(--purple);
+        }
+
+        /* CONTACT */
+
+        .contact {
+            background:
+                radial-gradient(circle at top right, #ffd9ec, transparent 35%),
+                linear-gradient(135deg, #f4e4f7, #fff6fb);
+        }
+
+        .contact-box {
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+            background: white;
+            padding: 55px 30px;
+            border-radius: 30px;
+            box-shadow: 0 20px 50px rgba(70, 20, 80, 0.12);
+        }
+
+        .contact-box h2 {
+            font-family: Georgia, serif;
+            color: var(--deep-purple);
+            font-size: 42px;
+            margin-bottom: 12px;
+        }
+
+        .contact-box p {
+            color: #705e77;
+            max-width: 650px;
+            margin: 0 auto 25px;
+        }
+
+        .contact-buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background: #29102f;
+            color: white;
+            padding: 45px 20px 85px;
+            text-align: center;
+        }
+
+        footer h3 {
+            font-family: Georgia, serif;
+            font-size: 25px;
+            margin-bottom: 8px;
+        }
+
+        footer p {
+            color: #d9c8dd;
+            font-size: 14px;
+        }
+
+        .social {
+            margin-top: 15px;
+            color: #ff9aca;
+            font-weight: bold;
+        }
+
+        /* MOBILE BUTTONS */
+
+        .mobile-bar {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            z-index: 2000;
+            background: white;
+            box-shadow: 0 -5px 20px rgba(50, 10, 60, 0.15);
+        }
+
+        .mobile-bar a {
+            flex: 1;
+            text-align: center;
+            padding: 13px 5px;
+            font-size: 11px;
+            font-weight: bold;
+        }
+
+        .call {
+            color: var(--purple);
+        }
+
+        .text {
+            color: var(--pink);
+        }
+
+        .whatsapp {
+            color: #168c52;
+        }
+
+        /* ANIMATION */
+
+        .reveal {
+            animation: fadeUp 0.8s ease both;
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* RESPONSIVE */
+
+        @media (max-width: 1050px) {
+            .service-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .gallery-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 800px) {
+            nav {
+                display: none;
+            }
+
+            .hero-grid,
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                min-height: 100svh;
+                padding: 135px 18px 90px;
+                background-position: center center;
+            }
+
+            .hero-text {
+                text-align: center;
+            }
+
+            .hero-text p {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
+
+            .why-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .review-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .mobile-bar {
+                display: flex;
+            }
+        }
+
+        @media (max-width: 600px) {
+            section {
+                padding: 70px 16px;
+            }
+
+            .section-title h2 {
+                font-size: 32px;
+            }
+
+            .hero-text h1 {
+                font-size: 45px;
+            }
+
+            .hero-text h2 {
+                font-size: 22px;
+            }
+
+            .hero-text p {
+                font-size: 15px;
+            }
+
+            .hero-buttons .btn {
+                width: 100%;
+                max-width: 330px;
+            }
+
+            .service-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 10px;
+            }
+
+            .gallery-item {
+                height: 220px;
+            }
+
+            .why-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-box {
+                padding: 40px 20px;
+            }
+
+            .contact-box h2 {
+                font-size: 34px;
+            }
+
+            .logo {
+                font-size: 15px;
+            }
+        }
+
+        /* ATTRACTIVE GALLERY TABS */
+        .gallery-tabs {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin: 0 auto 35px;
+        }
+
+        .gallery-tabs button {
+            border: 1px solid #ead7ef;
+            background: linear-gradient(135deg, #ffffff, #fff4fa);
+            color: var(--purple);
+            padding: 11px 17px;
+            border-radius: 999px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 12px;
+            letter-spacing: .3px;
+            box-shadow: 0 6px 18px rgba(80, 20, 90, .08);
+            transition: transform .2s ease, box-shadow .2s ease, background .2s ease, color .2s ease;
+        }
+
+        .gallery-tabs button:hover {
+            transform: translateY(-2px);
+            color: var(--pink);
+            box-shadow: 0 10px 24px rgba(232, 62, 145, .15);
+        }
+
+        .gallery-tabs button.active {
+            color: white;
+            border-color: transparent;
+            background: linear-gradient(135deg, var(--purple), var(--pink));
+            box-shadow: 0 10px 25px rgba(109, 35, 125, .22);
+        }
+
+        @media (max-width: 600px) {
+            .gallery-tabs { gap: 7px; margin-bottom: 25px; }
+            .gallery-tabs button { padding: 9px 11px; font-size: 11px; }
+        }
+    </style>
 </head>
+
 <body>
-<header>
-  <div class="nav">
-    <a href="index.html" class="logo">SUMAIRA HENNA ART
-      <span>HENNA • MAKEUP • HAIR STYLING</span>
-    </a>
-    <a href="index.html#gallery" class="back">← Back to Main Gallery</a>
-  </div>
-</header>
 
-<section class="hero">
-  <small>OUR MAKEUP COLLECTION</small>
-  <h1>Makeup Gallery</h1>
-  <p>Explore makeup looks and videos for weddings, parties, celebrations and special occasions.</p>
-</section>
+    <!-- HEADER -->
 
-<main class="gallery-wrap">
-  <div class="gallery-heading">
-    <h2>Our Makeup Gallery</h2>
-    <p>Tap any photo to view it larger. Play the makeup video below.</p>
-  </div>
+    <header>
+        <div class="nav">
 
-  <div class="gallery-grid">
-        <button class="gallery-card" type="button" data-type="image" data-src="2b94727e-0b2a-4aae-88b9-ed085cb0a5a5.jpg" aria-label="Open makeup photo 1">
-            <img src="2b94727e-0b2a-4aae-88b9-ed085cb0a5a5.jpg" alt="Makeup photo 1" loading="lazy">
-            <span class="view-label">View Photo</span>
-        </button>
-        <button class="gallery-card" type="button" data-type="image" data-src="6ca4813c-6ad4-48b7-8e79-114591f6f19e.jpg" aria-label="Open makeup photo 2">
-            <img src="6ca4813c-6ad4-48b7-8e79-114591f6f19e.jpg" alt="Makeup photo 2" loading="lazy">
-            <span class="view-label">View Photo</span>
-        </button>
-        <button class="gallery-card" type="button" data-type="image" data-src="8ffab944-8a11-4d0c-9002-caef9f1228dd.jpg" aria-label="Open makeup photo 3">
-            <img src="8ffab944-8a11-4d0c-9002-caef9f1228dd.jpg" alt="Makeup photo 3" loading="lazy">
-            <span class="view-label">View Photo</span>
-        </button>
-        <button class="gallery-card" type="button" data-type="image" data-src="9ffe96fe-1c09-4f7a-997a-efb04c75295c.jpg" aria-label="Open makeup photo 4">
-            <img src="9ffe96fe-1c09-4f7a-997a-efb04c75295c.jpg" alt="Makeup photo 4" loading="lazy">
-            <span class="view-label">View Photo</span>
-        </button>
-        <button class="gallery-card" type="button" data-type="image" data-src="54ec0f17-88b0-4121-ab2d-96d6cce0dd5a.jpg" aria-label="Open makeup photo 5">
-            <img src="54ec0f17-88b0-4121-ab2d-96d6cce0dd5a.jpg" alt="Makeup photo 5" loading="lazy">
-            <span class="view-label">View Photo</span>
-        </button>
-        <button class="gallery-card" type="button" data-type="image" data-src="65df67b5-bce6-4a89-ad0d-6fa0b90d81cb.jpg" aria-label="Open makeup photo 6">
-            <img src="65df67b5-bce6-4a89-ad0d-6fa0b90d81cb.jpg" alt="Makeup photo 6" loading="lazy">
-            <span class="view-label">View Photo</span>
-        </button>
-        <button class="gallery-card" type="button" data-type="image" data-src="76d98792-c963-41e1-808b-83afe5ba8ab6.jpg" aria-label="Open makeup photo 7">
-            <img src="76d98792-c963-41e1-808b-83afe5ba8ab6.jpg" alt="Makeup photo 7" loading="lazy">
-            <span class="view-label">View Photo</span>
-        </button>
-        <button class="gallery-card" type="button" data-type="image" data-src="81df836e-e437-45ea-8a26-4d82c9ea852e.jpg" aria-label="Open makeup photo 8">
-            <img src="81df836e-e437-45ea-8a26-4d82c9ea852e.jpg" alt="Makeup photo 8" loading="lazy">
-            <span class="view-label">View Photo</span>
-        </button>
-        <button class="gallery-card" type="button" data-type="image" data-src="309bd0f9-7386-4ecf-bd0f-1e7b1e93215b.jpg" aria-label="Open makeup photo 9">
-            <img src="309bd0f9-7386-4ecf-bd0f-1e7b1e93215b.jpg" alt="Makeup photo 9" loading="lazy">
-            <span class="view-label">View Photo</span>
-        </button>
-        <button class="gallery-card" type="button" data-type="image" data-src="313a4acd-2bc6-4d10-bbc7-bdc0c1d2d852.jpg" aria-label="Open makeup photo 10">
-            <img src="313a4acd-2bc6-4d10-bbc7-bdc0c1d2d852.jpg" alt="Makeup photo 10" loading="lazy">
-            <span class="view-label">View Photo</span>
-        </button>
-        <button class="gallery-card" type="button" data-type="image" data-src="1202fc38-6aa4-4242-8226-5e2dbbe66e1c.jpg" aria-label="Open makeup photo 11">
-            <img src="1202fc38-6aa4-4242-8226-5e2dbbe66e1c.jpg" alt="Makeup photo 11" loading="lazy">
-            <span class="view-label">View Photo</span>
-        </button>
-        <button class="gallery-card" type="button" data-type="image" data-src="80583c84-3b50-4858-b714-2f89284709e0.jpg" aria-label="Open makeup photo 12">
-            <img src="80583c84-3b50-4858-b714-2f89284709e0.jpg" alt="Makeup photo 12" loading="lazy">
-            <span class="view-label">View Photo</span>
-        </button>
-        <button class="gallery-card" type="button" data-type="image" data-src="926276eb-080a-4831-82f1-b9cfebfc4f28.jpg" aria-label="Open makeup photo 13">
-            <img src="926276eb-080a-4831-82f1-b9cfebfc4f28.jpg" alt="Makeup photo 13" loading="lazy">
-            <span class="view-label">View Photo</span>
-        </button>
-        <button class="gallery-card" type="button" data-type="image" data-src="63084405-67fa-44a6-9b6c-7755c712c5c5.jpg" aria-label="Open makeup photo 14">
-            <img src="63084405-67fa-44a6-9b6c-7755c712c5c5.jpg" alt="Makeup photo 14" loading="lazy">
-            <span class="view-label">View Photo</span>
-        </button>
-        <button class="gallery-card" type="button" data-type="image" data-src="af46b8bc-4744-4590-a5fb-7d7153ac1f67.jpg" aria-label="Open makeup photo 15">
-            <img src="af46b8bc-4744-4590-a5fb-7d7153ac1f67.jpg" alt="Makeup photo 15" loading="lazy">
-            <span class="view-label">View Photo</span>
-        </button>
-        <button class="gallery-card" type="button" data-type="image" data-src="b5ce2893-fe84-4b9c-b4b6-6969b353a247.jpg" aria-label="Open makeup photo 16">
-            <img src="b5ce2893-fe84-4b9c-b4b6-6969b353a247.jpg" alt="Makeup photo 16" loading="lazy">
-            <span class="view-label">View Photo</span>
-        </button>
-        <button class="gallery-card" type="button" data-type="image" data-src="b7f2f1cb-838e-4ac7-a3d3-3f00036e1525.jpg" aria-label="Open makeup photo 17">
-            <img src="b7f2f1cb-838e-4ac7-a3d3-3f00036e1525.jpg" alt="Makeup photo 17" loading="lazy">
-            <span class="view-label">View Photo</span>
-        </button>
-        <button class="gallery-card" type="button" data-type="image" data-src="b782704d-9f48-4afc-8983-d8b509920f4d.jpg" aria-label="Open makeup photo 18">
-            <img src="b782704d-9f48-4afc-8983-d8b509920f4d.jpg" alt="Makeup photo 18" loading="lazy">
-            <span class="view-label">View Photo</span>
-        </button>
-        <button class="gallery-card" type="button" data-type="image" data-src="bf8b4d00-43d2-4ec4-88bb-d466a7d6ea8a.jpg" aria-label="Open makeup photo 19">
-            <img src="bf8b4d00-43d2-4ec4-88bb-d466a7d6ea8a.jpg" alt="Makeup photo 19" loading="lazy">
-            <span class="view-label">View Photo</span>
-        </button>
-        <button class="gallery-card" type="button" data-type="image" data-src="cbb90fb5-d327-406b-a375-c837bd8f3a36.jpg" aria-label="Open makeup photo 20">
-            <img src="cbb90fb5-d327-406b-a375-c837bd8f3a36.jpg" alt="Makeup photo 20" loading="lazy">
-            <span class="view-label">View Photo</span>
-        </button>
-        <button class="gallery-card" type="button" data-type="image" data-src="cd742311-a830-4054-9434-021b24a8f976.jpg" aria-label="Open makeup photo 21">
-            <img src="cd742311-a830-4054-9434-021b24a8f976.jpg" alt="Makeup photo 21" loading="lazy">
-            <span class="view-label">View Photo</span>
-        </button>
-        <button class="gallery-card" type="button" data-type="image" data-src="d0effc10-4393-4438-b9e5-4c50e4372c1d.jpg" aria-label="Open makeup photo 22">
-            <img src="d0effc10-4393-4438-b9e5-4c50e4372c1d.jpg" alt="Makeup photo 22" loading="lazy">
-            <span class="view-label">View Photo</span>
-        </button>
-        <button class="gallery-card" type="button" data-type="image" data-src="d8715cd8-9c34-4f09-b4d9-360b77c7ded0.jpg" aria-label="Open makeup photo 23">
-            <img src="d8715cd8-9c34-4f09-b4d9-360b77c7ded0.jpg" alt="Makeup photo 23" loading="lazy">
-            <span class="view-label">View Photo</span>
-        </button>
-        <button class="gallery-card" type="button" data-type="image" data-src="dce24432-9f16-45c3-8618-aba3655a3d8c.jpg" aria-label="Open makeup photo 24">
-            <img src="dce24432-9f16-45c3-8618-aba3655a3d8c.jpg" alt="Makeup photo 24" loading="lazy">
-            <span class="view-label">View Photo</span>
-        </button>
-        <button class="gallery-card" type="button" data-type="image" data-src="e66db902-c77c-4852-bf54-d85142dd4905.jpg" aria-label="Open makeup photo 25">
-            <img src="e66db902-c77c-4852-bf54-d85142dd4905.jpg" alt="Makeup photo 25" loading="lazy">
-            <span class="view-label">View Photo</span>
-        </button>
-        <div class="gallery-card video-card">
-            <video controls preload="metadata" playsinline>
-                <source src="f948d986-270a-442e-b957-17bd6cff3913.mp4" type="video/mp4">
-                Your browser does not support this video.
-            </video>
-            <span class="video-label">Makeup Video</span>
+            <a href="#home" class="logo">
+                SUMAIRA HENNA ART,
+                MAKEUP & HAIR STYLISH
+                <span>HENNA ART • MAKEUP • HAIR STYLING</span>
+            </a>
+
+            <nav>
+                <a href="#home">HOME</a>
+                <a href="#about">ABOUT</a>
+                <a href="#services">SERVICES</a>
+                <a href="#gallery">GALLERY</a>
+                <a href="#contact">CONTACT</a>
+            </nav>
+
         </div>
-  </div>
+    </header>
 
-  <section class="book">
-    <h2>Love These Makeup Looks?</h2>
-    <p>Contact Sumaira to discuss your makeup appointment.</p>
-    <a class="button" href="https://wa.me/19724690023" target="_blank" rel="noopener noreferrer">Book Through WhatsApp</a>
-  </section>
-</main>
 
-<footer>
-  SUMAIRA HENNA ART, MAKEUP & HAIR STYLISH
-  <p>Dallas, Texas • Concord, California</p>
-</footer>
+    <!-- HERO -->
 
-<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Enlarged makeup photo">
-  <button class="close-lightbox" type="button" aria-label="Close photo viewer">&times;</button>
-  <img id="lightbox-image" src="" alt="Enlarged makeup photo">
-</div>
+    <section class="hero" id="home">
 
-<script>
-const lightbox = document.getElementById('lightbox');
-const lightboxImage = document.getElementById('lightbox-image');
+        <div class="hero-grid">
 
-document.querySelectorAll('.gallery-card[data-type="image"]').forEach(card => {
-  card.addEventListener('click', () => {
-    lightboxImage.src = card.dataset.src;
-    lightboxImage.alt = 'Enlarged makeup photo';
-    lightbox.classList.add('open');
-  });
-});
+            <div class="hero-text reveal">
 
-function closeLightbox() {
-  lightbox.classList.remove('open');
-  lightboxImage.src = '';
-}
+                <small>Beauty • Art • Elegance</small>
 
-document.querySelector('.close-lightbox').addEventListener('click', closeLightbox);
-lightbox.addEventListener('click', event => {
-  if (event.target === lightbox) closeLightbox();
-});
-document.addEventListener('keydown', event => {
-  if (event.key === 'Escape') closeLightbox();
-});
-</script>
+                <h1>
+                    Your Beauty,
+                    <span>Your Style,</span>
+                    Your Special Day
+                </h1>
+
+                <h2>
+                    Professional Beauty Services
+                </h2>
+
+                <p>
+                    Professional Henna • Makeup • Hair Styling •
+                    Face Painting • Glitter Tattoos
+                </p>
+
+                <p>
+                    Creating beautiful looks and memorable moments
+                    for weddings, celebrations and special events.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#contact" class="btn btn-primary">
+                        BOOK YOUR APPOINTMENT
+                    </a>
+
+                    <a href="https://wa.me/19724690023"
+                       target="_blank"
+                       class="btn btn-outline">
+                        WHATSAPP US
+                    </a>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+
+    <section class="about" id="about">
+
+        <div class="container">
+
+            <div class="section-title">
+                <small>About Sumaira</small>
+                <h2>Beauty With Creativity & Care</h2>
+                <p>
+                    Professional beauty services designed to make
+                    every special occasion feel even more beautiful.
+                </p>
+            </div>
+
+
+            <div class="about-grid">
+
+                <div class="about-box">
+
+                    <h3>
+                        6+ Years of Experience
+                    </h3>
+
+                    <p>
+                        Sumaira specializes in creating beautiful
+                        henna designs, elegant makeup looks and
+                        hairstyles for special occasions.
+                    </p>
+
+                    <p>
+                        Whether it is your wedding day, Eid,
+                        birthday, engagement or another celebration,
+                        every look is created with care and attention
+                        to detail.
+                    </p>
+
+                    <p>
+                        Serving clients in Dallas, Texas and
+                        Concord, California.
+                    </p>
+
+                </div>
+
+
+                <div class="credentials">
+
+                    <div class="credential">
+                        <strong>6+ Years Experience</strong>
+                        Professional beauty experience.
+                    </div>
+<div class="credential">
+                        <strong>Licensed Cosmetologist</strong>
+                        Professional cosmetology training and licensing.
+                    </div>
+
+                    <div class="credential">
+                        <strong>Personalized Service</strong>
+                        Your ideas and preferences are always important.
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SERVICES -->
+
+    <section class="services" id="services">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <small>What We Do</small>
+
+                <h2>Our Services</h2>
+
+                <p>
+                    Beautiful services for weddings, parties,
+                    celebrations and special events.
+                </p>
+
+            </div>
+
+
+            <div class="service-grid">
+
+                <div class="service-card">
+<div class="service-icon">🌸</div>
+<h3>Henna Art</h3>
+                    <p>
+                        Traditional and modern henna designs
+                        for every occasion.
+                    </p>
+                </div>
+
+
+                <div class="service-card">
+                    <div class="service-icon">💄</div>
+                    <h3>Makeup</h3>
+                    <p>
+                        Beautiful makeup looks for weddings,
+                        parties and special events.
+                    </p>
+                </div>
+
+
+                <div class="service-card">
+                    <div class="service-icon">💇‍♀️</div>
+                    <h3>Hair Styling</h3>
+                    <p>
+                        Elegant hairstyles designed to complete
+                        your look.
+                    </p>
+                </div>
+
+
+                <div class="service-card">
+                    <div class="service-icon">🎨</div>
+                    <h3>Face Painting</h3>
+                    <p>
+                        Fun and creative face painting for
+                        events and celebrations.
+                    </p>
+                </div>
+
+
+                <div class="service-card">
+                    <div class="service-icon">✨</div>
+                    <h3>Glitter Tattoos</h3>
+                    <p>
+                        Sparkling temporary designs perfect
+                        for parties and festivals.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+<!-- GALLERY -->
+
+    <section class="gallery" id="gallery">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <small>Our Work</small>
+
+                <h2>Gallery</h2>
+
+                <p>
+                    More photos can be added here as your gallery grows.
+                </p>
+
+            </div>
+
+
+            <div class="gallery-tabs">
+
+                <button class="active" onclick="filterGallery('all', this)">✨ ALL</button>
+
+                <button onclick="filterGallery('henna', this)">🌸 HENNA</button>
+
+                <button onclick="filterGallery('makeup', this)">💄 MAKEUP</button>
+
+                <button onclick="filterGallery('hair', this)">💇‍♀️ HAIR</button>
+
+                <button onclick="filterGallery('face', this)">🎨 FACE PAINTING</button>
+
+                <button onclick="filterGallery('glitter', this)">✨ GLITTER TATTOOS</button>
+
+            </div>
+
+
+            <div class="gallery-grid">
+                <a class="gallery-item" data-category="henna" href="henna-gallery.html" aria-label="View all henna mehndi photos">
+                    <img src="WhatsApp Image 2026-09-14 at 3.24.42 PM (10).jpeg" alt="Henna Mehndi Designs">
+                    <div class="gallery-label">Henna Mehndi Designs — View Gallery →</div>
+                </a>
+
+                <a class="gallery-item" data-category="makeup" href="makeup-gallery.html" aria-label="View all makeup photos">
+                    <img src="WhatsApp Image 2026-09-14 at 3.24.40 PM (5).jpeg" alt="Makeup">
+                    <div class="gallery-label">Makeup — View Gallery →</div>
+                </a>
+
+                <a class="gallery-item" data-category="hair" href="hair-gallery.html" aria-label="View hair styling photos">
+                    <img src="WhatsApp Image 2026-09-14 at 3.24.40 PM (7).jpeg" alt="Hair Styling">
+                    <div class="gallery-label">Hair Styling — View Gallery →</div>
+                </a>
+
+                <a class="gallery-item" data-category="face" href="face-painting-gallery.html" aria-label="View face painting photos">
+                    <img src="WhatsApp Image 2026-09-17 at 6.18.17 PM.jpeg" alt="Face Painting">
+                    <div class="gallery-label">Face Painting — View Gallery →</div>
+                </a>
+
+                <a class="gallery-item" data-category="glitter" href="glitter-tattoos-gallery.html" aria-label="View glitter tattoo photos">
+                    <img src="WhatsApp Image 2026-09-16 at 10.16.52 AM.jpeg" alt="Glitter Tattoos">
+                    <div class="gallery-label">Glitter Tattoos — View Gallery →</div>
+                </a>
+
+                <a class="gallery-item" data-category="henna" href="henna-gallery.html" aria-label="View more henna designs">
+                    <img src="WhatsApp Image 2026-09-14 at 3.24.40 PM (11).jpeg" alt="Henna Design">
+                    <div class="gallery-label">More Henna Designs — View Gallery →</div>
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- OCCASIONS -->
+
+    <section class="occasions">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <small>Perfect For</small>
+
+                <h2>Special Occasions</h2>
+
+            </div>
+
+
+            <div class="occasion-grid">
+
+                <div class="occasion">💍 Weddings</div>
+
+                <div class="occasion">🌙 Eid</div>
+
+                <div class="occasion">🎉 Parties</div>
+
+                <div class="occasion">🍼 Baby Showers</div>
+
+                <div class="occasion">🎂 Birthday Parties</div>
+
+                <div class="occasion">💎 Engagements</div>
+
+                <div class="occasion">🎓 Graduations</div>
+
+                <div class="occasion">🏢 Corporate Events</div>
+
+                <div class="occasion">🎪 Events & Festivals</div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- REVIEWS -->
+
+    <section class="reviews">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <small>Kind Words</small>
+
+                <h2>Client Reviews</h2>
+
+            </div>
+
+
+            <div class="review-note">
+                Sample reviews for the website. Replace these with
+                genuine customer testimonials before publishing.
+            </div>
+
+
+            <div class="review-grid">
+
+                <div class="review">
+
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+
+                    <p>
+                        “Sumaira was so sweet and patient. My henna
+                        came out beautiful and exactly how I wanted it.
+                        I absolutely loved the final design!”
+                    </p>
+
+                    <strong>— Sarah</strong>
+
+                </div>
+
+
+                <div class="review">
+
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+
+                    <p>
+                        “I felt so beautiful for my special event.
+                        The makeup looked amazing and lasted all night.
+                        She really listened to what I wanted.”
+                    </p>
+
+                    <strong>— Aisha</strong>
+
+                </div>
+
+
+                <div class="review">
+
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+
+                    <p>
+                        “Wonderful experience from beginning to end.
+                        She was professional, friendly and made
+                        everything feel easy. I would definitely book again!”
+                    </p>
+
+                    <strong>— Jessica</strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <section class="contact" id="contact">
+
+        <div class="container">
+
+            <div class="contact-box">
+
+                <h2>Book Your Appointment</h2>
+
+                <p>
+                    Ready to create your special look?
+                    Contact Sumaira by call, text or WhatsApp
+                    to discuss your event and request a quote.
+                </p>
+
+
+                <div class="contact-buttons">
+
+                    <a href="tel:+19724690023"
+                       class="btn btn-primary">
+                        📞 CALL
+                    </a>
+
+                    <a href="sms:+19724690023"
+                       class="btn btn-outline">
+                        💬 TEXT
+                    </a>
+
+                    <a href="https://wa.me/19724690023"
+                       target="_blank"
+                       class="btn btn-primary">
+                        💚 WHATSAPP
+                    </a>
+
+                    <a href="https://instagram.com/sumaira.lakhani.946"
+                       target="_blank"
+                       class="btn btn-outline">
+                        📸 INSTAGRAM
+                    </a>
+
+                    <a href="https://www.instagram.com/hennabyafreenl"
+                       target="_blank"
+                       class="btn btn-outline">
+                        📸 @HENNABYAFREENL
+                    </a>
+
+                    <a href="YOUR_SECOND_INSTAGRAM_URL"
+                       target="_blank"
+                       class="btn btn-outline">
+                        📸 INSTAGRAM 2
+                    </a>
+
+                    <a href="https://www.facebook.com/sumaira.lakhani.946"
+                       target="_blank"
+                       class="btn btn-outline">
+                        📘 FACEBOOK
+                    </a>
+
+                </div>
+
+                <p style="margin-top:25px;">
+                    <strong>Dallas, Texas • Concord, California</strong>
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <h3>
+            SUMAIRA HENNA ART, MAKEUP & HAIR STYLISH
+        </h3>
+
+        <p>
+            Henna Art • Makeup • Hair Styling • Face Painting • Glitter Tattoos
+        </p>
+
+        <p class="social">
+            @sumaira.lakhani.946 • @hennabyafreenl
+        </p>
+
+        <p style="margin-top:20px;">
+            © 2026 Sumaira Henna Art, Makeup & Hair Stylish.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- MOBILE CALL / TEXT / WHATSAPP BAR -->
+
+    <div class="mobile-bar">
+
+        <a href="tel:+19724690023" class="call">
+            📞<br>CALL
+        </a>
+
+        <a href="sms:+19724690023" class="text">
+            💬<br>TEXT
+        </a>
+
+        <a href="https://wa.me/19724690023"
+           target="_blank"
+           class="whatsapp">
+            💚<br>WHATSAPP
+        </a>
+
+    </div>
+
+
+    <!-- GALLERY FILTER -->
+
+    <script>
+
+        function filterGallery(category, button) {
+
+            const items =
+                document.querySelectorAll(".gallery-item");
+
+            const buttons =
+                document.querySelectorAll(".gallery-tabs button");
+
+            buttons.forEach(function(btn) {
+                btn.classList.remove("active");
+            });
+
+            button.classList.add("active");
+
+            items.forEach(function(item) {
+
+                if (
+                    category === "all" ||
+                    item.dataset.category === category
+                ) {
+                    item.style.display = "block";
+                } else {
+                    item.style.display = "none";
+                }
+
+            });
+
+        }
+
+    </script>
+
 </body>
 </html>
